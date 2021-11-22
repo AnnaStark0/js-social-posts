@@ -14,43 +14,43 @@
 const posts = [
     {
         "id": 1,
-        "content": "Prova 1",
-        "media": "https://unsplash.it/600/300?image=171",
+        "content": "Don't lecture me, Obi-Wan! I see through the lies of the Jedi. I do not fear the dark side as you do. I have brought peace, freedom, justice, and security to my new Empire." ,
+        "media": "https://artesettima.it/wp-content/uploads/2019/12/anakin-skywalker-could-have-been-in-star-wars-the_mzvc-696x392.jpg",
         "author": {
-            "name": "Phil Mangione",
-            "image": "https://unsplash.it/300/300?image=15"
+            "name": "Anakin Skywalker",
+            "image": "https://c.tenor.com/q35YlC4XkeYAAAAC/star-wars-anakin-skywalker.gif"
         },
         "likes": 80,
         "created": "2021-06-25"
     },
     {
         "id": 2,
-        "content": "Hello World!",
-        "media": "https://unsplash.it/600/400?image=112",
+        "content": "Be mindful of your thoughts, Anakin, they betray you.",
+        "media": "https://multiplayer.net-cdn.it/thumbs/images/2018/11/06/obi-wan-kenobi_jpg_800x0_crop_upscale_q85.jpg",
         "author": {
-            "name": "Sofia Perlari",
-            "image": "https://unsplash.it/300/300?image=10"
+            "name": "Obi-Wan Kenobi",
+            "image": "https://starwarsblog.starwars.com/wp-content/uploads/2017/09/star-wars-episode-II-jar-jar-obi-wan-anakin-skywalker-1024x435.jpg"
         },
         "likes": 120,
         "created": "2021-09-03"
     },
     {
         "id": 3,
-        "content": "Distinctio minima iusto.",
-        "media": "https://unsplash.it/600/400?image=234",
+        "content": "You must unlearn what you have learned.",
+        "media": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd0V8utzVdXprJOqK0-v1FoxONAG8bVvFm9A&usqp=CAU",
         "author": {
-            "name": "Chiara Passaro",
-            "image": "https://unsplash.it/300/300?image=20"
+            "name": "Yoda",
+            "image": "https://images.contentful.com/awpxl2koull4/1Fmkrk1eYwO8m6CcS2MwKW/c786e8d968255108ae95ad8de3194537/do-or-do-not.gif"
         },
         "likes": 78,
         "created": "2021-05-15"
     },
     {
         "id": 4,
-        "content": "Prova Prova!",
-        "media": "https://unsplash.it/600/400?image=24",
+        "content": "So this is how liberty dies.. with thunderous applause.",
+        "media": "https://i2.wp.com/starwarsitalia.net/wp-content/uploads/2020/12/Star-Wars-Italia-Padme-Amidala.jpg?resize=1140%2C570&ssl=1",
         "author": {
-            "name": "Luca Formicola",
+            "name": "Padmè Amidala",
             "image": null
         },
         "likes": 56,
@@ -58,11 +58,11 @@ const posts = [
     },
     {
         "id": 5,
-        "content": "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. ",
-        "media": "https://unsplash.it/600/400?image=534",
+        "content": "Did you ever hear the tragedy of Darth Plagueis the Wise?..",
+        "media": "https://insolenzadir2d2.it/wp-content/uploads/2017/05/Palp_trustme.jpg",
         "author": {
-            "name": "Alessandro Sainato",
-            "image": "https://unsplash.it/300/300?image=29"
+            "name": "Sheev Palpatine",
+            "image": "https://media0.giphy.com/media/3o84sq21TxDH6PyYms/giphy.gif?cid=ecf05e47qsv3pnxu4kzif45j2ikq94biumvavikj6dz9vm9d&rid=giphy.gif&ct=g"
         },
         "likes": 95,
         "created": "2021-03-05"
@@ -85,7 +85,7 @@ let items = '';
      <div class="post__header">
          <div class="post-meta">                    
              <div class="post-meta__icon">
-                 <img class="profile-pic" src=${posts[i].media} alt=${posts[i].name}>                    
+                 <img class="profile-pic" src=${posts[i].media} alt=${posts[i].author.name}>                    
              </div>
              <div class="post-meta__data">
                  <div class="post-meta__author">${posts[i].author.name}</div>
