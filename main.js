@@ -78,6 +78,10 @@ const container = document.getElementById('container');
 let items = '';
 
 
+
+let (posts[created]) = new Date("mm/dd/yyyy");
+
+
  for (let i = 0; i < posts.length; i++) {
      console.log(posts[i]);
 
@@ -117,3 +121,6 @@ let items = '';
  console.log(items);
 
  container.innerHTML = items;
+
+ //
+
