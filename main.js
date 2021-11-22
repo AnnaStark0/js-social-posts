@@ -14,7 +14,7 @@
 const posts = [
     {
         "id": 1,
-        "content": "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.",
+        "content": "Prova 1",
         "media": "https://unsplash.it/600/300?image=171",
         "author": {
             "name": "Phil Mangione",
@@ -25,7 +25,7 @@ const posts = [
     },
     {
         "id": 2,
-        "content": "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.",
+        "content": "Hello World!",
         "media": "https://unsplash.it/600/400?image=112",
         "author": {
             "name": "Sofia Perlari",
@@ -36,7 +36,7 @@ const posts = [
     },
     {
         "id": 3,
-        "content": "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.",
+        "content": "Distinctio minima iusto.",
         "media": "https://unsplash.it/600/400?image=234",
         "author": {
             "name": "Chiara Passaro",
@@ -47,7 +47,7 @@ const posts = [
     },
     {
         "id": 4,
-        "content": "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.",
+        "content": "Prova Prova!",
         "media": "https://unsplash.it/600/400?image=24",
         "author": {
             "name": "Luca Formicola",
@@ -58,7 +58,7 @@ const posts = [
     },
     {
         "id": 5,
-        "content": "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.",
+        "content": "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. ",
         "media": "https://unsplash.it/600/400?image=534",
         "author": {
             "name": "Alessandro Sainato",
@@ -85,17 +85,17 @@ let items = '';
      <div class="post__header">
          <div class="post-meta">                    
              <div class="post-meta__icon">
-                 <img class="profile-pic" src="https://unsplash.it/300/300?image=15" alt="Phil Mangione">                    
+                 <img class="profile-pic" src=${posts[i].media} alt=${posts[i].name}>                    
              </div>
              <div class="post-meta__data">
-                 <div class="post-meta__author">Phil Mangione</div>
-                 <div class="post-meta__time">4 mesi fa</div>
+                 <div class="post-meta__author">${posts[i].author.name}</div>
+                 <div class="post-meta__time">${posts[i].created}</div>
              </div>                    
          </div>
      </div>
-     <div class="post__text">Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.</div>
+     <div class="post__text">${posts[i].content}</div>
      <div class="post__image">
-         <img src="https://unsplash.it/600/300?image=171" alt="">
+         <img src=${posts[i].author.image} alt="">
      </div>
      <div class="post__footer">
          <div class="likes js-likes">
@@ -106,11 +106,14 @@ let items = '';
                  </a>
              </div>
              <div class="likes__counter">
-                 Piace a <b id="like-counter-1" class="js-likes-counter">80</b> persone
+                 Piace a <b id="like-counter-1" class="js-likes-counter">${posts[i].likes}</b> persone
              </div>
          </div> 
      </div>            
  </div>`
 
- console.log(items);
  }
+
+ console.log(items);
+
+ container.innerHTML = items;
