@@ -69,7 +69,11 @@ const posts = [
     }
 ];
 
-console.log(posts);
+// console.log(posts);
+
+
+ 
+
 
 // -- 1 --
 
@@ -79,11 +83,14 @@ let items = '';
 
 
 
-let (posts[created]) = new Date("mm/dd/yyyy");
+
 
 
  for (let i = 0; i < posts.length; i++) {
      console.log(posts[i]);
+
+     
+
 
      items += `<div class="post">
      <div class="post__header">
@@ -117,6 +124,8 @@ let (posts[created]) = new Date("mm/dd/yyyy");
  </div>`
 
  }
+
+ 
 
  console.log(items);
 
